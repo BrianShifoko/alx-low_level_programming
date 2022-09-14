@@ -1,4 +1,5 @@
-#include "main.h"
+#include "main.c"
+#define MAIN.H
 
 /**
  * print_alphabet - a function that prints the alphabet, in lowercase
