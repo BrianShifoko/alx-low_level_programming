@@ -5,20 +5,20 @@
  * Return: nothing.
  */
 
-void print_alphabet_x10(void
+void print_alphabet_x10(void)
 {
-	int l;
-	int n = 0;
+int n, co;
 
-	while (n < 10)
-	{
-		l = 'a';
-		while (l <= 'z')
-		{
-			_putchar(l);
-			l += 1;
-		}
-		_putchar(10);
-		n += 1;
-	}
+co = 0;
+
+while (co < 10)
+{
+for (n = 'a'; n <= 'z'; n++)
+{
+_putchar(n);
 }
+co++;
+_putchar('\n');
+}
+}
+
