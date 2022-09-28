@@ -18,6 +18,7 @@ return (1 + _strlen_recursion(s));
  * get_pal - check if is 0 or 1
  * @s: input string
  * @len: length
+ * Return: int
  */
 
 int get_pal(char *s, int len)
@@ -32,7 +33,8 @@ return (get_pal(s + 1, len - 2));
 /**
  * is_palindrome - returns 1 if a string is a palindrome and 0 if not.
  * @s: input char
- * Return: int
+ * Return: If the string is a palindrome - 1.
+ *         If the string is not a palindrome - 0.
  */
 
 int is_palindrome(char *s)
