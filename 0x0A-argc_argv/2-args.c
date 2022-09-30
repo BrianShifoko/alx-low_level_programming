@@ -2,21 +2,22 @@
 #include <stdio.h>
 
 /**
- * main - program that prints its name
+ * main - program that prints all arguments it receives
  * @argc: argument count
- * @argv: argunment vector
+* @argv: argunment vector
  * Return: int
  */
 
 int main(int argc, char *argv[])
 {
-int count;
-for (count = 0; count < argc; count++)
+int count = 0;
+if (argc > 0)
 {
-if (argc == 1)
+while (count < argc)
+{
 printf("%s\n", argv[count]);
-else
-break;
+count++;
+}
 }
 return (0);
 }

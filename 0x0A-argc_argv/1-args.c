@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints its name
+ * main - program that prints the number of arguments passed into it
  * @argc: argument count
  * @argv: argunment vector
  * Return: int
@@ -10,13 +10,10 @@
 
 int main(int argc, char *argv[])
 {
-int count;
-for (count = 0; count < argc; count++)
+if (argc > 0)
 {
-if (argc == 1)
-printf("%s\n", argv[count]);
-else
-break;
+argv = argv;
+printf("%d\n", argc - 1);
 }
 return (0);
 }
