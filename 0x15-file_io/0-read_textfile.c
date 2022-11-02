@@ -32,7 +32,6 @@ fd_read = read(fd, buff, letters);
 if (fd_read == -1)
 return (0);
 fd_write = write(STDOUT_FILENO, buff, fd_read);
-
 if (fd_write == -1)
 {
 free(buff);
